@@ -1,0 +1,100 @@
+/* Modern file upload section styling */
+.top {
+  margin: 40px 0;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.top:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+/* Enhanced choose button with gradient */
+.choose {
+  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.choose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.4);
+}
+
+.choose:active {
+  transform: translateY(0);
+}
+
+/* Text area styling */
+.textArea {
+  color: #a0aec0;
+  font-size: 14px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+}
+
+/* Upload button with premium styling */
+.upload {
+  background: linear-gradient(135deg, #8338ec 0%, #ff006e 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(131, 56, 236, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.upload:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(131, 56, 236, 0.4);
+}
+
+.upload:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.upload:disabled,
+.upload[disabled] {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  color: #718096;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+div {
+  padding: 5px 10px;
+}
